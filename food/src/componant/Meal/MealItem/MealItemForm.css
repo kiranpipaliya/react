@@ -1,8 +1,8 @@
-.form {
+.addform {
   text-align: right;
 }
 
-.form button {
+.addform button {
   font: inherit;
   cursor: pointer;
   background-color: #8a2b06;
@@ -13,8 +13,8 @@
   font-weight: bold;
 }
 
-.form button:hover,
-.form button:active {
+.addform button:hover,
+.addform button:active {
   background-color: #641e03;
   border-color: #641e03;
 }

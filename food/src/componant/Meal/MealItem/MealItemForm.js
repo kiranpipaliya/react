@@ -23,7 +23,7 @@ const MealForm = (props) => {
     props.onAdditemCart(enteredValueNumber);
   };
   return (
-    <form className="form" onSubmit={addItemFormHandler}>
+    <form className="addform" onSubmit={addItemFormHandler}>
       <Input
         ref={amountInputRef}
         label="Ammount"
