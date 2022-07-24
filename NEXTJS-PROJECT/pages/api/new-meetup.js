@@ -1,9 +1,9 @@
 import { MongoClient } from "mongodb"
-async function Handler(req, res) {
+async function handler(req, res) {
     if (req.method === "POST") {
         const data = req.body
         const { title, description, image, address } = data
-        const client = await MongoClient.connect("mongodb+srv://kiran:12345@cluster0.1sbux.mongodb.net/meetups?retryWrites=true&w=majority")
+        const client = await MongoClient.connect("mongodb+srv://kiran:12345@cluster0.1sbux.mongodb.net/meetup?retryWrites=true&w=majority")
         console.log("Client", client);
         const db = client.db();
         console.log("DB", db);
@@ -19,4 +19,4 @@ async function Handler(req, res) {
 
 
 }
-export default Handler
+export default handler
